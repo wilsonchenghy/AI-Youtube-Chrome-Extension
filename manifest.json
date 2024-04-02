@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "AI Youtube Chrome Extension",
+  "description": "Base Level Extension",
+  "version": "1.0",
+  "host_permissions": [
+    "http://localhost:8000/"
+  ],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "AI Youtube Chrome Extension.png"
+  }
+}
