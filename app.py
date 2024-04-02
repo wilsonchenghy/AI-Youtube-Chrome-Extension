@@ -39,7 +39,7 @@ def generateSummary():
     vector = FAISS.from_documents(documents, embeddings)
     print(documents)
 
-    llm = ChatOpenAI(openai_api_key=OPENAI_API_KEY)
+    llm = ChatOpenAI(openai_api_key=OPENAI_API_KEY, model_name='gpt-4')
 
     prompt = ChatPromptTemplate.from_template("""Answer the following question based only on the provided context:
     <context>
